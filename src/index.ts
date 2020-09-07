@@ -8,7 +8,6 @@ import {
 import { join } from 'path'
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
-import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 
 export interface Options {
     entry: string | string[] | Entry | EntryFunc
@@ -94,7 +93,6 @@ export function build(
                 modules: ['node_modules', moduleBase],
             },
             plugins: [
-                new CleanWebpackPlugin(),
                 new HtmlWebpackPlugin({
                     template: html,
                     filename: 'index.html',
