@@ -12,5 +12,6 @@
             "*": ["src/*"]
         }
     },
-    "files": ["src/index.ts"]
+    "include": ["src"],
+    "exclude": ["node_modules", "test"]
 }
