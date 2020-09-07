@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///test/src/app.scss","webpack:///test/src/test.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAW;;ACDf;EACI,UAAU","file":"main.css","sourcesContent":[".test {\n    color: blue;\n}",".test {\n    color: red;\n}"],"sourceRoot":""}
