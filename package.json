@@ -1,6 +1,6 @@
 {
   "name": "@zwzn/build",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -36,5 +36,8 @@
     "ts-loader": "^8.0.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "peerDependencies": {
+    "typescript": "^4.0.2"
   }
 }
