@@ -1,3 +1,5 @@
+import * as HtmlWebpackPlugin from 'html-webpack-plugin'
+import * as MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import {
     CliConfigOptions,
     Configuration,
@@ -5,9 +7,6 @@ import {
     Entry,
     EntryFunc,
 } from 'webpack'
-import { join } from 'path'
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export interface Options {
     entry: string | string[] | Entry | EntryFunc
