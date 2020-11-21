@@ -8,6 +8,8 @@ import {
     EntryFunc,
 } from 'webpack'
 
+const ESLintWebpackPlugin = require('eslint-webpack-plugin')
+
 export interface Options {
     entry: string | string[] | Entry | EntryFunc
     html: string
@@ -36,7 +38,7 @@ export function build(
                     {
                         test: /\.tsx?$/,
                         exclude: /node_modules/,
-                        loader: ['ts-loader', 'eslint-loader'],
+                        loader: ['ts-loader'],
                     },
                     {
                         test: /\.module\.scss$/,
@@ -103,6 +105,7 @@ export function build(
                     filename: '[name].css',
                     chunkFilename: '[id].css',
                 }),
+                new ESLintWebpackPlugin({}),
             ],
         }
     }
